@@ -1,6 +1,8 @@
 #include "dictionary.h"
 #include <string.h>
 
+#define DICT_INVALID_SEARCH -1
+
 static int dict_search(const dict_t *dict, const uint8_t *key)
 {
     for (size_t i = 0; i < dict->elem_number; i++)

@@ -5,8 +5,6 @@
 #include <stdbool.h>
 #include <stddef.h>
 
-#define DICT_INVALID_SEARCH -1
-
 typedef struct
 {
     uint8_t *key;
