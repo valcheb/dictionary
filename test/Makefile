@@ -1,6 +1,8 @@
 CFLAGS= -g -Wall
 INCLUDES = -I..
-SOURCES = ../dictionary.c
+SOURCES = ../dictionary.c ./main.c
 
-all:
-	gcc $(CFLAGS) $(INCLUDES) $(DEFINE) main.c $(SOURCES) -o test
+test: $(SOURCES)
+	gcc $(CFLAGS) $(INCLUDES) $(SOURCES) -o test
+
+all: test
